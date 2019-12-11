@@ -1,0 +1,43 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+/* this is a comment in CSS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* selects all h1s, h2s, h3s, etc */
+  font-weight: 400;
+}
+
+#board {
+  /* select element with id 'board' */
+  margin: 0 auto; /* a common trick for centering elements horizontally */
+  font-size: 20px;
+}
+
+.cell {
+  /* select all elements with the 'cell' class */
+  border: 1px solid #555;
+  height: 100px;
+  width: 100px;
+}
+
+button {
+  padding: 8px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid #555;
+  font: inherit; /* buttons have their own font sizing/family, but I want it to follow the rest of the application, so I inherit */
+}
+button:hover {
+  /* :hover rules are only applied when the element is being hovered over! cool! */
+  background-color: #eee;
+}
+button:focus {
+  outline: none;
+}
